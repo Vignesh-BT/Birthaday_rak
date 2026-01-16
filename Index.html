@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Rakshita</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    animation: float 4s ease-in-out infinite;
+}
+
+h1 {
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+}
+
+.flowers {
+    font-size: 35px;
+    margin: 15px 0;
+    animation: bloom 2s infinite alternate;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes bloom {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+.balloons span {
+    position: absolute;
+    bottom: -50px;
+    font-size: 30px;
+    animation: rise 6s linear infinite;
+}
+
+.balloons span:nth-child(1) { left: 10%; animation-delay: 0s; }
+.balloons span:nth-child(2) { left: 30%; animation-delay: 1s; }
+.balloons span:nth-child(3) { left: 50%; animation-delay: 2s; }
+.balloons span:nth-child(4) { left: 70%; animation-delay: 3s; }
+.balloons span:nth-child(5) { left: 90%; animation-delay: 4s; }
+
+@keyframes rise {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-800px); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>🎉 Happy Birthday 🎉</h1>
+    <h2>💖 Rakshita 💖</h2>
+
+    <div class="flowers">
+        🌸 🌺 🌷 🌹 💐
+    </div>
+
+    <p>
+        May your life be filled with happiness,<br>
+        success, love and endless smiles 😊<br>
+        Have a wonderful year ahead ✨
+    </p>
+
+    <p><strong>🎂 Enjoy Your Special Day 🎂</strong></p>
+</div>
+
+<div class="balloons">
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+    <span>🎈</span>
+</div>
+
+</body>
+</html>
